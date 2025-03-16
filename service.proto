@@ -15,5 +15,5 @@ message ProcessRequest {
 
 message ProcessResponse {
   bytes image_data = 1;
-  string meeting_point = 2; // Точка пересечения
+  string meeting_point = 2;
 }
