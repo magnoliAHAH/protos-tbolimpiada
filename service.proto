@@ -4,17 +4,16 @@ package fileservice;
 
 option go_package = "./gen/";
 
-service FileService {
-  rpc ProcessFile(FileRequest) returns (FileResponse);
+service ProcessingService {
+  rpc ProcessFile (ProcessRequest) returns (ProcessResponse);
 }
 
-message FileRequest {
-  bytes file_data = 1;  // Содержимое файла
-  string file_name = 2; // Имя файла (example.txt)
-  string mime_type = 3; // Тип файла (text/plain)
+message ProcessRequest {
+  string filename = 1;
+  bytes content = 2;
 }
 
-message FileResponse {
-  string processed_text = 1; // Обработанный текст
-  bytes image_data = 2;      // Обработанное изображение
+message ProcessResponse {
+  bytes image_data = 1;
+  string meeting_point = 2; // Точка пересечения
 }
