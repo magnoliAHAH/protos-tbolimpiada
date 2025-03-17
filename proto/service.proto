@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package fileservice;
 
-option go_package = "ermin.tbsso.v1;tbssov1";
+option go_package = "github.com/magnoliAHAH/protos-tbolimpiada/gen";
 
 
 service ProcessingService {

@@ -4,7 +4,7 @@
 // - protoc             v5.29.2
 // source: service.proto
 
-package tbssov1
+package gen
 
 import (
 	context "context"
