@@ -15,6 +15,6 @@ message ProcessRequest {
 }
 
 message ProcessResponse {
-  bytes image_data = 1;
+  string image_url = 1;
   string meeting_point = 2;
 }
